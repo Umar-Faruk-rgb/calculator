@@ -42,13 +42,15 @@ for (let i=0; i<10; i++){
 }
 
 dot.addEventListener('click', () => {
-    currentNumber.push('.');
+    if (!currentNumber.includes('.')){
+        currentNumber.push('.');
         let temp = document.createElement('div');
         temp.innerHTML = '.';
         screenDown.append(temp);
         if (currentOperator === 'equal'){
             currentOperator = '';
         }
+    }
 });
 
 divide.addEventListener('click', division);

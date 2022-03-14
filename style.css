@@ -1,0 +1,135 @@
+#container {
+    display: block;
+    position: absolute;
+    margin-top: 1px;
+    margin-left: -175px;
+    left: 45%;
+    min-height: 520px;
+    width: 350px;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 45px;
+    text-align: center;
+}
+
+#screen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    margin-bottom: 55px;
+    min-height: 80px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#screen div {
+    flex: 1;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#bottom-line {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#top-line {
+    font-size: 25px;
+    justify-content: end;
+}
+
+#bottom-line div {
+    flex: 0 1 auto;
+    text-align: right;
+}
+
+#key-pad {
+    display: flex;
+    align-items: stretch;
+    height: 360px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#numbers {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.rows {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+}
+
+.num {
+    flex: 1;
+    color: white;
+    font-size: 40px;
+    vertical-align: middle;
+    line-height: 72.5px;
+}
+
+#clear,
+#delete {
+    font-size: 30px;
+}
+
+#clear:hover,
+#delete:hover,
+#zero:hover {
+    border-bottom: 1px solid black;
+}
+.num:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 183, 12);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.operators div {
+    flex-grow: 1;
+    width: 60px;
+    vertical-align: middle;
+    line-height: 87.5px;
+}
+
+.equal {
+    display: flex;
+    background-color: white;
+    font-size: 50px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.equal div {
+    flex: 1;
+}
+
+.equal div:hover {
+    background-color: black;
+    color: white;
+    cursor: default;
+    border-top: 1px solid white;
+}
+
+.operators div:hover {
+    background-color: black;
+    color: white;
+    cursor: default;
+}
